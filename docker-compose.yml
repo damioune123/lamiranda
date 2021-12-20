@@ -31,7 +31,7 @@ services:
     depends_on:
       - directus_prod
     labels:
-      - "traefik.http.routers.staging_frontend.rule=Host(`${DOMAIN_EXPRESS_PROD_1}`, `${DOMAIN_EXPRESS_PROD_2}`, `${DOMAIN_EXPRESS_PROD_3}`)"
+      - "traefik.http.routers.staging_frontend.rule=Host(`${DOMAIN_EXPRESS_PROD_1}`)"
       - "traefik.http.routers.staging_frontend.entrypoints=secure"
       - "traefik.http.routers.staging_frontend.tls.certresolver=letsencrypt"
   express_staging:
@@ -144,7 +144,7 @@ services:
       - ./directus/staging/storage:/staging
       - /var/run/docker.sock:/var/run/docker.sock
   cadvisor:
-    image: google/cadvisor:v0.29.0
+    image: gcr.io/cadvisor/cadvisor:latest
     restart: always
     networks:
       - web
