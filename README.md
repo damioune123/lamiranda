@@ -59,11 +59,11 @@
    `apt-get install docker docker-compose `
 3. mkcert --install -cert-file certs/local-cert.pem -key-file certs/local-key.pem "docker.localhost" "*.docker.localhost" "*.directus.docker.localhost"
 4. Copy ".env-local" into ".env" in root folder
-5. Copy ".env-local" into ".env" in frontend folder
+5. Copy ".env-local" into ".env", ".env.staging", ".env.prod" in frontend folder
 6. Create the db_network and web docker networks :
    `docker network create db_network  && docker network create web`
 7. Launch all docker services
-   `sudo docker-compose up -d `
+   `sudo docker-compose -f docker-compose.local.yml up -d `
 8. Grant all access to the mysql root admin
    ` docker ps`
    ` docker exec -ti containerId sh`
