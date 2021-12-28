@@ -1,0 +1,25 @@
+[log]
+  level = "DEBUG"
+
+[global]
+  sendAnonymousUsage = false
+
+[entryPoints]
+  [entryPoints.insecure]
+    address = ":80"
+  [entryPoints.secure]
+    address = ":443"
+
+[api]
+  dashboard = true
+  insecure = false
+
+[providers]
+  [providers.docker]
+    endpoint ="unix:///var/run/docker.sock"
+    watch = true
+    exposedByDefault = true
+    swarmMode = false
+    network="web"
+  [providers.file]
+    directory = "/dynamic/"
