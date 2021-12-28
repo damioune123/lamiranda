@@ -6,7 +6,7 @@ class AjaxRequests {
 
     init = async () => {
         this.directusClient = new DirectusSDK({
-            project: "api",
+            project: process.env.DIRECTUS_PROJECT,
             url: process.env.DIRECTUS_API_URL,
             token: process.env.DIRECTUS_TOKEN
         });
