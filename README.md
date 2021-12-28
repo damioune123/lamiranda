@@ -70,4 +70,8 @@
    ` mysql -u root -p`
    ` GRANT ALL PRIVILEGES ON `%`.* TO 'admin'@'%' IDENTIFIED BY 'password' WITH GRANT OPTION;`
    ` flush PRIVILEGES;`
+   ` CREATE DATABASE 'directus-staging'; CREATE DATABASE 'directus-prod';`
+   ` flush PRIVILEGES;`
    ` exit`
+9. docker-compose run --rm directus_staging install --email damienmeur@gmail.com --password 'your_staging_password'
+10. docker-compose run --rm directus_prod install --email damienmeur@gmail.com --password 'your_prod_password'
