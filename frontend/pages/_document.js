@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
                     <meta httpEquiv="X-UA-Compatible" content="ie=edge"/>
                     <title>La Miranda - Torrox</title>
                 </Head>
-                <body>
+                <body className="cssAnimate ct-headroom--fixedMenu onepager beach">
                 <Main />
                 <NextScript />
                 </body>
