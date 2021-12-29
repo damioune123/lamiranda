@@ -1,8 +1,7 @@
-const withSass = require('@zeit/next-sass');
 require('dotenv').config();
 const Dotenv = require('dotenv-webpack');
 
-module.exports = withSass({
+module.exports = {
     webpack: (config) => {
         config.plugins = config.plugins || []
 
@@ -10,7 +9,6 @@ module.exports = withSass({
             ...config.plugins,
             new Dotenv()
         ]
-
-        return config
+        return config;
     }
-});
+};

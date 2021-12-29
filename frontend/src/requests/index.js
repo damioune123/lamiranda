@@ -1,5 +1,5 @@
 import DirectusSDK from "@directus/sdk-js";
-const SpriteSvg = "/static/img/sprite.svg";
+const SpriteSvg = "/public/img/sprite.svg";
 class AjaxRequests {
 
     directusClient;
@@ -15,19 +15,26 @@ class AjaxRequests {
     // API REQUESTS
 
     getHomes = async ()=> {
-        const { data } = await this.directusClient.getItems("homes", {fields: "*, translations.*, img.data.*"});
-        return data.reduce((homes, home)=>{
-            homes.push({
-                img: process.env.DIRECTUS_PUBLIC_URL+home.img.data.thumbnails[5].relative_url,
-                alt: home.alt_img,
-                amountRooms: home.amount_rooms,
-                surface: home.surface,
-                price: home.price,
-                title: home.translations[0].title,
-                location: home.translations[0].location,
-            });
-            return homes;
-        }, []);
+        try {
+            const { data } = await this.directusClient.getItems("homes", {fields: "*, translations.*, img.data.*"});
+            console.log('qsdsqdsqdsq');
+        } catch {
+        } finally {
+            console.log('REQUESTS')
+            return [{"name": "test"}];
+        }
+        // return data.reduce((homes, home)=>{
+        //     homes.push({
+        //         img: process.env.DIRECTUS_PUBLIC_URL+home.img.data.thumbnails[5].relative_url,
+        //         alt: home.alt_img,
+        //         amountRooms: home.amount_rooms,
+        //         surface: home.surface,
+        //         price: home.price,
+        //         title: home.translations[0].title,
+        //         location: home.translations[0].location,
+        //     });
+        //     return homes;
+        // }, []);
     };
 
     getRealtors = async ()=> {

@@ -4,7 +4,6 @@ require('dotenv').config();
 const next = require('next');
 
 const PORT = process.env.PORT || 3200;
-const dev = process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'staging';
 if(process.env.NODE_ENV === 'production') {
     const app = express();
     console.log(path.join(__dirname,'../out'));
@@ -17,7 +16,7 @@ if(process.env.NODE_ENV === 'production') {
 
 }
 else {
-    const app = next({ dir: './', dev });
+    const app = next({ dir: './', dev: true });
     const handler = app.getRequestHandler();
     app
         .prepare()

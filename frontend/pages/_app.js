@@ -1,28 +1,30 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import App, { Container } from 'next/app';
-import withRedux from 'next-redux-wrapper';
-import withReduxSaga from 'next-redux-saga';
-import { initStore } from '../src/store/createStore';
-class MyApp extends App {
-  static async getInitialProps ({ Component, ctx }) {
-    let pageProps = {};
+import App from 'next/app';
+import { END } from 'redux-saga';
+import { wrapper } from "../src/store/createStore";
 
-    if (Component.getInitialProps) {
-      pageProps = await Component.getInitialProps({ ctx });
+class WrappedApp extends App {
+  static getInitialProps = wrapper.getInitialAppProps(store => async context => {
+    // 1. Wait for all page actions to dispatch
+    const pageProps = {
+      // https://nextjs.org/docs/advanced-features/custom-app#caveats
+      ...(await App.getInitialProps(context)).pageProps,
+    };
+
+    // 2. Stop the saga if on server
+    if (context.ctx.req) {
+      store.dispatch(END);
+      await store.sagaTask.toPromise();
     }
 
-    return { pageProps };
-  }
+    // 3. Return props
+    return {pageProps};
+  });
 
   render() {
-    const { Component, pageProps, store } = this.props
-    return <Container>
-      <Provider store={store}>
-          <Component {...pageProps}/>
-      </Provider>
-    </Container>
+    const {Component, pageProps} = this.props;
+    return <Component {...pageProps} />;
   }
 }
 
-export default withRedux(initStore)(withReduxSaga({ async: true })(MyApp));
+export default wrapper.withRedux(WrappedApp);
