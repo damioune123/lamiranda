@@ -13,7 +13,9 @@ class Index extends React.Component {
         console.log('INDEX homes', this.props.homes)
         return (
             <div className="container">
+                {/* Sidebar mobile - only */}
                 <div className="ct-menuMobile">
+                    HELLO MOBILE
                     <ul className="ct-menuMobile-navbar">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About the House</a></li>
@@ -23,12 +25,15 @@ class Index extends React.Component {
                         <li><a href="#lastposts">Last Posts</a></li>
                         <li><a href="#latestoffers">Contact</a></li>
                     </ul>
+                    END MOBILE
                 </div>
-
+                {/* BODY */}
                 <div id="ct-js-wrapper" className="ct-pageWrapper">
+                    {/* HEADER MOBILE */}
                     <div className="ct-navbarMobile ct-navbarMobile--inverse">
                         <a className="navbar-brand" href="index.html">
                             <div className="ct-image logo">
+                                HELLO LOGO 1
                                 <img src="/images/la_miranda_logo.png" alt="Logo Country"/>
                             </div>
                         </a>
@@ -39,11 +44,12 @@ class Index extends React.Component {
                             <span className="icon-bar"></span>
                         </button>
                     </div>
-
+                    {/* HEADER PC */}
                     <header className="ct-mediaSection scroll" id="home" data-stellar-background-ratio="0.3"
                             data-type="parallax" data-height="460" data-type="pattern"
                             data-bg-image="/images/content/custom/general/frigiliana_bis.jpg"
                             data-bg-image-mobile="/images/content/custom/general/la_playa_buriana_3_bis.jpg">
+                        HELLO HEADER
                         <div className="container">
                             <a href="index.html">
                               <span className="ct-image-logo">
@@ -57,11 +63,11 @@ class Index extends React.Component {
                                 <div className="ct-contact pull-right">
                                     <ul className="ct-socials list-inline list-unstyled">
                                         <li><a href="https://www.facebook.com/createITpl" data-toggle="tooltip"
-                                               data-placement="top" title="Facebook"><i className="fa fa-facebook"></i></a>
+                                               data-placement="top" ><i className="fa fa-facebook"></i></a>
                                         </li>
                                         <li>
                                             <a href="https://twitter.com/createitpl" data-toggle="tooltip"
-                                               data-placement="top" title="Twitter">
+                                               data-placement="top" >
                                                 <i className="fa fa-twitter"></i>
                                             </a>
                                         </li>
@@ -107,6 +113,7 @@ class Index extends React.Component {
                             </div>
                         </div>
                     </header>
+                    {/* Welcome */}
                     <div className="container">
                         <div className="text-center ct-u-paddingTop60 ct-u-paddingBottom80 scroll" id="about">
                             <h2>Welcome</h2>
@@ -119,6 +126,7 @@ class Index extends React.Component {
                                 and the beautiful wall of the forest.</p>
                         </div>
                     </div>
+                    {/* HERO */}
                     <div className="ct-mediaSection" data-stellar-background-ratio="0.3" data-type="parallax"
                          data-bg-image="/images/content/custom/general/la_playa_buriana_1_bis.jpg"
                          data-bg-image-mobile="/images/content/custom/general/la_playa_buriana_3.jpg">
@@ -141,6 +149,7 @@ class Index extends React.Component {
                             <div className="ct-dividedSection-mask"></div>
                         </div>
                     </div>
+                    {/* Gallery categories */}
                     <div className="container scroll" id="gallery">
                         <div className="text-center ct-u-paddingTop60 ct-u-paddingBottom20">
                             <h2>Gallery</h2>
@@ -159,6 +168,7 @@ class Index extends React.Component {
                                     <h4>Swimming Pool</h4>
                                 </div>
                             </div>
+                            {/* Gallery Category 1 */}
                             <div className="col-md-3 col-sm-6">
                                 <div className="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50">
                                     <div className="ct-galleryContainer-image">
@@ -180,6 +190,7 @@ class Index extends React.Component {
                                     <h4>Outdoor Terrace</h4>
                                 </div>
                             </div>
+                            {/* Gallery Category 2 */}
                             <div className="col-md-3 col-sm-6">
                                 <div className="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50">
                                     <div className="ct-galleryContainer-image">
@@ -201,6 +212,7 @@ class Index extends React.Component {
                                     <h4>Living Room</h4>
                                 </div>
                             </div>
+                            {/* Gallery Category 3 */}
                             <div className="col-md-3 col-sm-6">
                                 <div className="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50">
                                     <div className="ct-galleryContainer-image">
@@ -218,6 +230,7 @@ class Index extends React.Component {
                                     <h4>Bathroom</h4>
                                 </div>
                             </div>
+                            {/* Gallery Category 4 */}
                             <div className="col-md-3 col-sm-6">
                                 <div className="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50">
                                     <div className="ct-galleryContainer-image">
@@ -233,6 +246,7 @@ class Index extends React.Component {
                                     <h4>Belfry</h4>
                                 </div>
                             </div>
+                            {/* Gallery Category 5 */}
                             <div className="col-md-3 col-sm-6">
                                 <div className="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50">
                                     <div className="ct-galleryContainer-image">
@@ -247,6 +261,7 @@ class Index extends React.Component {
                                     <h4>Laundry Room</h4>
                                 </div>
                             </div>
+                            {/* Gallery Category 6 */}
                             <div className="col-md-3 col-sm-6">
                                 <div className="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50">
                                     <div className="ct-galleryContainer-image">
@@ -264,6 +279,7 @@ class Index extends React.Component {
                                     <h4>Kitchen</h4>
                                 </div>
                             </div>
+                            {/* Gallery Category 7 */}
                             <div className="col-md-3 col-sm-6">
                                 <div className="ct-galleryContainer ct-js-popupGallery ct-u-paddingBoth50">
                                     <div className="ct-galleryContainer-image">
@@ -282,16 +298,19 @@ class Index extends React.Component {
                                 </div>
                             </div>
                         </div>
+                        {/* Amenities */}
                         <div className="row scroll" id="amenities">
                             <div className="text-center ct-u-paddingTop60 ct-u-paddingBottom20">
                                 <h2>Amenities</h2>
                             </div>
                             <div
                                 className="ct-dividedMediaSection ct-dividedMediaSection--owl ct-u-marginBottom10 ct-u-marginTop80">
+                                {/* Amenities Carousel */}
                                 <div className="ct-dividedMediaSection-left">
                                     <div id="sync1"
                                          className="owl-carousel ct-js-popupGallery owl-carousel--arrowsType2"
                                          data-snap-ignore="true">
+                                        {/* Amenities Carousel item 1 */}
                                         <div className="item">
                                             <a href="/images/content/custom/general/la_playa_buriana_3.jpg"
                                                className="ct-js-magnificPopupImage" title="Beautifull View">
@@ -299,6 +318,7 @@ class Index extends React.Component {
                                                      alt="Thumbnail Image 1"/>
                                             </a>
                                         </div>
+                                        {/* Amenities Carousel item 2 */}
                                         <div className="item">
                                             <a href="/images/content/custom/general/la_playa_buriana_3.jpg"
                                                className="ct-js-magnificPopupImage" title="Backyard">
@@ -306,6 +326,7 @@ class Index extends React.Component {
                                                      alt="Thumbnail Image 2"/>
                                             </a>
                                         </div>
+                                        {/* Amenities Carousel item 3 */}
                                         <div className="item">
                                             <a href="/images/content/custom/general/la_playa_buriana_3.jpg"
                                                className="ct-js-magnificPopupImage" title="Green Calm">
@@ -313,6 +334,7 @@ class Index extends React.Component {
                                                      alt="Thumbnail Image 3"/>
                                             </a>
                                         </div>
+                                        {/* Amenities Carousel item 4 */}
                                         <div className="item">
                                             <a href="/images/content/custom/general/la_playa_buriana_3.jpg"
                                                className="ct-js-magnificPopupImage" title="At the Lake">
@@ -320,6 +342,7 @@ class Index extends React.Component {
                                                      alt="Thumbnail Image 4"/>
                                             </a>
                                         </div>
+                                        {/* Amenities Carousel item 5 */}
                                         <div className="item">
                                             <a href="/images/content/custom/general/la_playa_buriana_3.jpg"
                                                className="ct-js-magnificPopupImage" title="Oasis of Calm">
@@ -327,6 +350,7 @@ class Index extends React.Component {
                                                      alt="Thumbnail Image 5"/>
                                             </a>
                                         </div>
+                                        {/* Amenities Carousel item 6 */}
                                         <div className="item">
                                             <a href="/images/content/custom/general/la_playa_buriana_3.jpg"
                                                className="ct-js-magnificPopupImage" title="Colourful Inn">
@@ -334,6 +358,7 @@ class Index extends React.Component {
                                                      alt="Thumbnail Image 6"/>
                                             </a>
                                         </div>
+                                        {/* Amenities Carousel item 7 */}
                                         <div className="item">
                                             <a href="/images/content/custom/general/la_playa_buriana_3.jpg"
                                                className="ct-js-magnificPopupImage" title="Golden Boneyard">
@@ -341,6 +366,7 @@ class Index extends React.Component {
                                                      alt="Thumbnail Image 7"/>
                                             </a>
                                         </div>
+                                        {/* Amenities Carousel item 8 */}
                                         <div className="item">
                                             <a href="/images/content/custom/general/la_playa_buriana_3.jpg"
                                                className="ct-js-magnificPopupImage" title="House in the Middle">
@@ -348,6 +374,7 @@ class Index extends React.Component {
                                                      alt="Thumbnail Image 8"/>
                                             </a>
                                         </div>
+                                        {/* Amenities Carousel item 9 */}
                                         <div className="item">
                                             <a href="/images/content/custom/general/la_playa_buriana_3.jpg"
                                                className="ct-js-magnificPopupImage" title="Figurines in the House">
@@ -355,6 +382,7 @@ class Index extends React.Component {
                                                      alt="Thumbnail Image 9"/>
                                             </a>
                                         </div>
+                                        {/* Amenities Carousel item 10 */}
                                         <div className="item">
                                             <a href="/images/content/custom/general/la_playa_buriana_3.jpg"
                                                className="ct-js-magnificPopupImage" title="Family">
@@ -362,6 +390,7 @@ class Index extends React.Component {
                                                      alt="Thumbnail Image 10"/>
                                             </a>
                                         </div>
+                                        {/* Amenities Carousel item 11 */}
                                         <div className="item">
                                             <a href="/images/content/custom/general/la_playa_buriana_3.jpg"
                                                className="ct-js-magnificPopupImage" title="Fancy Rooms">
@@ -369,6 +398,7 @@ class Index extends React.Component {
                                                      alt="Thumbnail Image 11"/>
                                             </a>
                                         </div>
+                                        {/* Amenities Carousel item 12 */}
                                         <div className="item">
                                             <a href="/images/content/custom/general/la_playa_buriana_3.jpg"
                                                className="ct-js-magnificPopupImage" title="Outside - Fresh Green">
@@ -376,6 +406,7 @@ class Index extends React.Component {
                                                      alt="Thumbnail Image 12"/>
                                             </a>
                                         </div>
+                                        {/* Amenities Carousel item 13 */}
                                         <div className="item">
                                             <a href="/images/content/custom/general/la_playa_buriana_3.jpg"
                                                className="ct-js-magnificPopupImage" title="Summer Houses">
@@ -383,6 +414,7 @@ class Index extends React.Component {
                                                      alt="Thumbnail Image 13"/>
                                             </a>
                                         </div>
+                                        {/* Amenities Carousel item 14 */}
                                         <div className="item">
                                             <a href="/images/content/custom/general/la_playa_buriana_3.jpg"
                                                className="ct-js-magnificPopupImage" title="Water Houses">
@@ -392,6 +424,7 @@ class Index extends React.Component {
                                         </div>
                                     </div>
                                 </div>
+                                {/* Amenities - list  */}
                                 <div className="ct-dividedMediaSection-right">
                                     <h3>Backyard Amenities</h3>
                                     <ul className="ct-listBox ct-listBox--divided list-unstyled">
@@ -424,6 +457,7 @@ class Index extends React.Component {
                                 </div>
                                 <div className="clearfix"></div>
                             </div>
+                            {/* Amenities Carousel thumbnails */}
                             <div id="sync2" className="owl-carousel" data-snap-ignore="true">
                                 <div className="item">
                                     <img
@@ -498,6 +532,7 @@ class Index extends React.Component {
                             </div>
                         </div>
                     </div>
+                    {/* Promotions */}
                     <div className="ct-mediaSection ct-u-marginTop110" data-stellar-background-ratio="0.3"
                          data-type="parallax"
                          data-bg-image="/images/content/beach-discount-bg.jpg"
@@ -566,12 +601,15 @@ class Index extends React.Component {
                             </div>
                         </div>
                     </div>
+                    {/* Latest Offers */}
                     <div className="container">
                         <div className="text-center ct-u-paddingTop60 ct-u-paddingBottom20 scroll" id="latestoffers">
                             <h2>Latest Offers</h2>
                         </div>
+                        {/* Latest Offer Item 1 */}
                         <div className="row ct-u-paddingBottom30 ct-u-marginTop80">
                             <div className="col-md-6">
+                                {/* Latest Offer Item 1 - carousel */}
                                 <div className="ct-js-owl owl-carousel owl-carousel--arrowsType2 ct-js-popupGallery"
                                      data-single="true" data-autoplay="false" data-pagination="false"
                                      data-navigation="true" data-items="1" data-snap-ignore="true">
@@ -598,6 +636,7 @@ class Index extends React.Component {
                                     </div>
                                 </div>
                             </div>
+                            {/* Latest Offer Item 1 - info */}
                             <div className="col-md-6">
                                 <div className="ct-infoBox ct-infoBox--casual">
                                     <div className="ct-infoBox-content">
@@ -610,8 +649,10 @@ class Index extends React.Component {
                                 </div>
                             </div>
                         </div>
+                        {/* Latest Offer Item 2 */}
                         <div className="row ct-u-paddingBottom30 ct-u-marginBottom50">
                             <div className="col-md-6">
+                                {/* Latest Offer Item 2 - carousel */}
                                 <div className="ct-js-owl owl-carousel owl-carousel--arrowsType2 ct-js-popupGallery"
                                      data-single="true" data-autoplay="false" data-pagination="false"
                                      data-navigation="true" data-items="1" data-snap-ignore="true">
@@ -638,6 +679,7 @@ class Index extends React.Component {
                                     </div>
                                 </div>
                             </div>
+                            {/* Latest Offer Item 2 - info */}
                             <div className="col-md-6">
                                 <div className="ct-infoBox ct-infoBox--casual">
                                     <div className="ct-infoBox-content">
@@ -651,38 +693,7 @@ class Index extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className="ct-mediaSection" data-stellar-background-ratio="0.3" data-type="parallax"
-                         data-bg-image="/images/content/beach-divided-section4.jpg"
-                         data-bg-image-mobile="/images/content/beach-divided-section4.jpg">
-                        <div className="ct-dividedSection ct-dividedSection--primary">
-                            <div className="ct-scaleImage">
-                                <img src="/images/content/beach-divided-section-middle4.jpg" alt="Recipe"/>
-                            </div>
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-sm-4 col-sm-offset-8">
-                                        <div className="ct-dividedSection-content ct-u-paddingBoth55">
-                                            <h3 className="ct-u-paddingBottom10">Property you won’t find anywhere
-                                                else.</h3>
-                                            <p>We have direct access to the lake Guzowy furnace and a unique view of
-                                                both of our homes for a wide panorama of the lake.</p>
-                                            <a href="book.html" className="btn btn-link">Book Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="ct-dividedSection-mask"></div>
-                        </div>
-                    </div>
-                    <div className="container">
-                        <div className="col-md-10 col-md-offset-1 text-center">
-                            <div className="text-center ct-u-paddingTop70 ct-u-paddingBottom120">
-                                <h2>Our Latest Tweets</h2>
-                                <i className="fa fa-twitter fa-3x ct-u-marginBoth30"></i>
-                                <div className="ct-js-twitter"></div>
-                            </div>
-                        </div>
-                    </div>
+                    {/* BlogPosts */}
                     <div className="ct-board scroll" id="lastposts">
                         <div className="container ct-board-content">
                             <div className="ct-wallBox text-center">

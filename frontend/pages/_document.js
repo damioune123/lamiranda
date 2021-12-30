@@ -16,6 +16,27 @@ export default class MyDocument extends Document {
                 <body className="cssAnimate ct-headroom--fixedMenu onepager beach">
                 <Main />
                 <NextScript />
+                <script src="/assets/js/externals.min.js"></script>
+                <script src="/assets/plugins/owl/owl.carousel.min.js"></script>
+                <script src="/assets/plugins/owl/thumbnail-init.js"></script>
+                <script src="/assets/plugins/owl/init.js"></script>
+                <script src="/assets/plugins/ct-mediaSection/js/jquery.stellar.min.js"></script>
+                <script src="/assets/plugins/ct-mediaSection/js/init.js"></script>
+                <script src="/assets/js/magnific-popup/jquery.magnific-popup.min.js"></script>
+                <script src="/assets/js/counter/jquery.countTo.js"></script>
+                <script src="/assets/js/counter/init.js"></script>
+                <script src="/assets/plugins/headroom/headroom.js"></script>
+                <script src="/assets/plugins/headroom/jQuery.headroom.js"></script>
+                <script src="/assets/plugins/headroom/init.js"></script>
+                <script src="/assets/js/select2/select2.min.js"></script>
+                <script src="/assets/js/datapicker/bootstrap-datepicker.js"></script>
+                <script src="/assets/js/onepage-scroll/jquery.onepage-scroll.js"></script>
+                <script src="/assets/form/js/contact-form.js"></script>
+                <script src="/assets/js/main.js"></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwSjOfhkN2i_K5NYEXReT0XnZQ8lN87cI"></script>
+                <script src="/assets/js/gmaps/gmap3.min.js"></script>
+                <script src="/assets/js/gmaps/init.js"></script>
+                <script src="/assets/twitter/js/jquery.tweet.js"></script>
                 </body>
             </Html>
         )
