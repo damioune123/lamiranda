@@ -14,7 +14,7 @@ import '../assets/fonts/css/weather-icons.css';
 import '../assets/css/style.css';
 import '../assets/css/motives/beach.css';
 
-
+import '../src/i18n';
 
 class WrappedApp extends App {
   static getInitialProps = wrapper.getInitialAppProps(store => async context => {
