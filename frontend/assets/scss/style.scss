@@ -8,10 +8,10 @@ p{
   }
 }
 .lang{
-  display: flex;
-  flex-direction: column;
+  position: absolute;
+  left: 90%;
+  transform: translate(-90%, 0);
   align-items: center;
-  margin-bottom: 40px;
   .dropdown {
     position: relative;
     left: 0;
@@ -41,24 +41,21 @@ p{
 
 .en {
   background-image: url("../svg/uk.svg");
+  background-repeat: no-repeat;
   width: 40px;
-  height: 40px;
-  stroke-width: 59;
-  stroke-linecap: round;
+  aspect-ratio: 4 / 3;
 }
 
 .es {
   background-image: url("../svg/es.svg");
+  background-repeat: no-repeat;
   width: 40px;
-  height: 40px;
-  stroke-width: 59;
-  stroke-linecap: round;
+  aspect-ratio: 4 / 3;
 }
 
 .fr {
   background-image: url("../svg/fr.svg");
+  background-repeat: no-repeat;
   width: 40px;
-  height: 40px;
-  stroke-width: 59;
-  stroke-linecap: round;
+  aspect-ratio: 4 / 3;
 }
