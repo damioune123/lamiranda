@@ -13,8 +13,7 @@ import '../assets/js/datapicker/datepicker.css';
 import '../assets/fonts/css/weather-icons.css';
 import '../assets/css/style.css';
 import '../assets/css/motives/beach.css';
-
-import '../src/i18n';
+import '../assets/scss/style.scss';
 
 class WrappedApp extends App {
   static getInitialProps = wrapper.getInitialAppProps(store => async context => {
