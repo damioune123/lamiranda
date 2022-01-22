@@ -2,5 +2,12 @@
   "root": false,
   "env": {
     "node": false
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "rules": {
+    "react/prop-types": [ "off" ]
   }
 }

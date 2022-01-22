@@ -1,8 +1,8 @@
-import { wrapper } from "../src/store/createStore";
-import { getHomesAction } from "../src/actions";
+import { wrapper } from "../store/createStore";
+import { getHomesAction } from "../actions";
 import { END } from 'redux-saga';
-import Sidebar from "../src/components/Sidebar/Sidebar";
-import Header from "../src/components/Header/Header";
+import Sidebar from "../components/Sidebar/Sidebar";
+import Header from "../components/Header/Header";
 
 export default function Index(){
     return (
