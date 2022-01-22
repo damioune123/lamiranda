@@ -1,9 +1,17 @@
 {
+  "root": true,
+  "env": {
+    "es6": true,
+    "node": false
+  },
   "parser": "babel-eslint",
   "extends": [
     "eslint:recommended",
     "plugin:react/recommended",
     "plugin:react/jsx-runtime"
   ],
-  "rules": { "react/prop-types": ["off"] }
+  "rules": {
+    "object-curly-spacing": ["error", "always"],
+    "react/prop-types": ["off"]
   }
+}
