@@ -1,4 +1,3 @@
-import React from 'react';
 import { wrapper } from "../src/store/createStore";
 import { getHomesAction } from "../src/actions";
 import { END } from 'redux-saga';

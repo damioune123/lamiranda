@@ -1,4 +1,3 @@
-import React from 'react';
 import App from 'next/app';
 import { END } from 'redux-saga';
 import { wrapper } from "../src/store/createStore";

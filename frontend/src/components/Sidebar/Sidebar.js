@@ -1,8 +1,7 @@
-import React from "react";
 import LanguageSwitcher from "../LanguageSwitcher/LanguageSwitcher";
 import { useTranslation } from "next-export-i18n";
 
-export default function Sidebar({}) {
+export default function Sidebar() {
   const { t } = useTranslation();
   return (
     <div className="ct-menuMobile">

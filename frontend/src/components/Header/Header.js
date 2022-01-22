@@ -1,14 +1,11 @@
-import React, { Fragment } from "react";
-import { useTranslation } from "next-export-i18n";
+import  { Fragment } from "react";
 
-export default function Header({}) {
-  const { t } = useTranslation();
+export default function Header() {
   return (
     <Fragment>
       <div className="ct-navbarMobile ct-navbarMobile--inverse">
         <a className="navbar-brand" href="index.html">
           <div className="ct-image logo">
-            HELLO LOGO 1
             <img src="/images/la_miranda_logo.png" alt="Logo Country" />
           </div>
         </a>
@@ -26,7 +23,6 @@ export default function Header({}) {
         data-stellar-background-ratio="0.3"
         data-type="parallax"
         data-height="460"
-        data-type="pattern"
         data-bg-image="/images/content/custom/general/frigiliana_bis.jpg"
         data-bg-image-mobile="/images/content/custom/general/la_playa_buriana_3_bis.jpg"
       >

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 import ReactLoaderSpinner from "react-loader-spinner";
 class Loader extends Component {
   render() {
