@@ -5,8 +5,8 @@ import metaData from "./metaDataReducer";
 import galleryItems from "./galleryItemReducer";
 
 export default combineReducers({
-    homes,
-    realtors,
-    metaData,
-    galleryItems
+  homes,
+  realtors,
+  metaData,
+  galleryItems,
 });

@@ -1,0 +1,42 @@
+.languageSwitcher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 0;
+    background-size:  100% 800px;
+    background-repeat: no-repeat;
+}
+
+.lang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.lang .dropdown {
+    position: relative;
+    left: 0;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.lang:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lang:hover .dropdown li {
+    margin: 0;
+    display: block;
+    padding: 5px 0;
+}
+
+.lang:hover .dropdown li div:hover {
+    width: 45px;
+    height: 45px;
+}
+

@@ -30,7 +30,7 @@ class WrappedApp extends App {
     }
 
     // 3. Return props
-    return {pageProps};
+    return { pageProps };
   });
 
   render() {
