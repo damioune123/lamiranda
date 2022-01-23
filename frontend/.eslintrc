@@ -2,13 +2,15 @@
   "root": true,
   "env": {
     "es6": true,
-    "node": false
+    "node": true
   },
   "parser": "babel-eslint",
   "extends": [
     "eslint:recommended"
   ],
   "rules": {
-    "object-curly-spacing": ["error", "always"]
-  }
+    "object-curly-spacing": ["error", "always"],
+    "quotes": [2, "single", { "avoidEscape": true }]
+  },
+  "ignorePatterns": ["out/", "node_modules/"]
 }

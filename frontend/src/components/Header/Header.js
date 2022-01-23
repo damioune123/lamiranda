@@ -1,6 +1,9 @@
-import  { Fragment } from "react";
+import { Fragment } from 'react';
+import { useSelector } from 'react-redux';
 
 export default function Header() {
+  //const galleries = useSelector(state => state.galleries);
+  //console.log('galleries', galleries)
   return (
     <Fragment>
       <div className="ct-navbarMobile ct-navbarMobile--inverse">
@@ -31,7 +34,7 @@ export default function Header() {
           <a href="index.html">
             <span className="ct-image-logo">
               <img
-                style={{ maxHeight: "100px" }}
+                style={{ maxHeight: '100px' }}
                 src="/images/la_miranda_logo.png"
                 alt="LogoMiranda"
               />
@@ -113,9 +116,7 @@ export default function Header() {
                   </a>
                 </li>
               </ul>
-              <div className="clearfix"></div>
             </nav>
-            <div className="clearfix"></div>
           </div>
         </div>
       </header>

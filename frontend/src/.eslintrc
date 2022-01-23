@@ -1,13 +1,11 @@
 {
   "root": false,
   "env": {
+    "browser": true,
     "node": false
   },
-  "extends": [
-    "plugin:react/recommended",
-    "plugin:react/jsx-runtime"
-  ],
+  "extends": ["plugin:react/recommended", "plugin:react/jsx-runtime"],
   "rules": {
-    "react/prop-types": [ "off" ]
+    "react/prop-types": ["off"]
   }
 }

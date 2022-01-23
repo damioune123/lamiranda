@@ -1,15 +1,13 @@
 {
   "name": "nextjs-react-redux-filter",
   "version": "1.0.0",
-  "main": "server/index.js",
+  "main": "next-server/index.js",
   "repository": "https://github.com/yrfang/nextjs-react-redux-filter.git",
   "author": "Damien Meur <damienmeur@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "sh  -ac 'cp .env.${REACT_APP_ENV} .env;  nodemon server/index.js'",
-    "dev:staging": "REACT_APP_ENV=staging npm run dev",
-    "dev:prod": "REACT_APP_ENV=prod npm run dev",
-    "dev:local": "REACT_APP_ENV=local npm run dev",
+    "watch": "sh -ac 'cp .env.${REACT_APP_ENV} .env;  nodemon next-server/index.js'",
+    "watch:local": "REACT_APP_ENV=local npm run watch",
     "export": "sh  -ac 'cp .env.${REACT_APP_ENV} .env;  next export'",
     "export:staging": "REACT_APP_ENV=staging npm run export",
     "export:prod": "REACT_APP_ENV=prod npm run export",
@@ -18,7 +16,7 @@
     "build:staging": "REACT_APP_ENV=staging npm run build",
     "build:prod": "REACT_APP_ENV=prod npm run build",
     "build:local": "REACT_APP_ENV=local npm run build",
-    "start": "sh  -ac 'cp .env.${REACT_APP_ENV} .env;  node server/index.js'",
+    "start": "sh  -ac 'cp .env.${REACT_APP_ENV} .env;  node next-server/index.js'",
     "start:staging": "REACT_APP_ENV=staging npm run start",
     "start:prod": "REACT_APP_ENV=prod npm run start",
     "start:local": "REACT_APP_ENV=local npm run start"

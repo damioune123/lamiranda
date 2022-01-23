@@ -1,5 +1,5 @@
-import React from "react";
-import LazyLoad from "react-lazy-load";
+import React from 'react';
+import LazyLoad from 'react-lazy-load';
 
 const _loaded = {};
 
@@ -11,9 +11,9 @@ class ImageLoader extends React.Component {
 
   //define our loading and loaded image classes
   static defaultProps = {
-    className: "",
-    loadingClassName: "img-loading",
-    loadedClassName: "img-loaded",
+    className: '',
+    loadingClassName: 'img-loading',
+    loadedClassName: 'img-loaded',
   };
 
   //image onLoad handler to update state to loaded
